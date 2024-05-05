@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pickle
+import numpy as np
+import sys
+import os
+sys.path.append(os.path.abspath("code"))
+from utils import download_data
+import lfp_functions as lf
+
+sns.set_theme(context='notebook',style='white',font_scale=1.5,
+              rc = {'axes.spines.top':False,'axes.spines.right':False,
+                     'image.cmap':plt.cm.jet})
+# Download lesson data
+download_data('https://surfdrive.surf.nl/files/index.php/s/7BosHgemAseANIc')
